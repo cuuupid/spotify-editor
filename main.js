@@ -7,7 +7,7 @@ require('electron-reload')(__dirname, {
 
 app.on('ready', () => {
     let win = new BrowserWindow({
-        width: 300, height: 500, icon: __dirname + '/icon.ico',
+        width: 315, height: 600, icon: __dirname + '/icon.ico',
         webPreferences: {
             plugins: true
         },

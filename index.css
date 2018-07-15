@@ -1,0 +1,41 @@
+html,
+body {
+    background-color: #a55;
+    color: white
+}
+
+.container {
+    margin-left: 30px;
+    padding-top: 40px
+}
+
+.control {
+    width: 200px;
+    height: 3.5rem
+}
+
+.control>label>span {
+    color: white;
+    font-weight: 600;
+    margin-top: 1.625rem
+}
+
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    border-color: white;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-bottom-color: white;
+    border-right-color: white;
+}
+
+label {
+    font-weight: 200;
+    color: #ddd !important;
+}
+
+input {
+    margin-top: 0.6rem !important;
+    height: 2rem !important;
+    color: white !important
+}

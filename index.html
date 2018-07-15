@@ -1,15 +1,76 @@
-<html style="background-color: #a55; color: white">
+<html>
 
 <head>
     <div id="electron-titlebar" platform="linux" class="drag"></div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <title>Spotify Editor</title>
 </head>
 
 <body>
-    <br>
-    <p>Spotify Editor</p>
+    <div class="container">
+        <div class="control">
+            <b>BG Color: #</b>
+            <div class="input-field inline">
+                <input id="bgColor" size="3" type="text" placeholder="123456" />
+            </div>
+        </div>
+        <div class="control">
+            <b>BG Color: #</b>
+            <div class="input-field inline">
+                <input id="bgColor" size="3" type="text" placeholder="123456" />
+            </div>
+        </div>
+        <div class="control">
+            <b>BG Color: #</b>
+            <div class="input-field inline">
+                <input id="bgColor" size="3" type="text" placeholder="123456" />
+            </div>
+        </div>
+        <div class="control">
+            <b>BG Color: #</b>
+            <div class="input-field inline">
+                <input id="bgColor" size="3" type="text" placeholder="123456" />
+            </div>
+        </div>
+        <div class="control">
+            <label>
+                <input id="lightsaber" type="checkbox" />
+                <span>Lightsaber</span>
+            </label>
+        </div>
+        <div class="control">
+            <label>
+                <input id="lightsaber" type="checkbox" />
+                <span>Pride Volume</span>
+            </label>
+        </div>
+        <div class="control" style="margin-top: 20px">
+            <div class="input-field">
+                <input id="prideText" class="validate" size="15" type="text" />
+                <label for="prideText">
+                    <b>Pride Volume Text</b>
+                </label>
+            </div>
+        </div>
+        <div class="control" style="margin-top: 20px">
+            <div class="input-field">
+                <input id="prideText" class="validate" size="15" type="text" />
+                <label for="prideText">
+                    <b>Pride Volume Text</b>
+                </label>
+            </div>
+        </div>
+        <div class="control" style="margin-top: 20px">
+            <div class="input-field">
+                <input id="prideText" class="validate" size="15" type="text" />
+                <label for="prideText">
+                    <b>Pride Volume Text</b>
+                </label>
+            </div>
+        </div>
+    </div>
     <script>
         require('electron-titlebar')
     </script>
