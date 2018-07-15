@@ -1,0 +1,70 @@
+{
+  "name": "spotify-editor",
+  "version": "0.4.4",
+  "description": "Spotify Editor.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "lets": {
+    "get": {
+      "lunch": {
+        "email": "shah at priansh dot com"
+      }
+    }
+  },
+  "author": "Priansh Shah",
+  "license": "ISC",
+  "dependencies": {
+    "electron-compile": "^6.4.2",
+    "electron-localshortcut": "^2.0.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-titlebar": "0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshah123/spotify-editor.git"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^2.0.5",
+    "electron-forge": "^5.1.1",
+    "electron-prebuilt-compile": "1.8.3"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "Spotify Editor"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "Spotify Editor"
+      }
+    }
+  }
+}
