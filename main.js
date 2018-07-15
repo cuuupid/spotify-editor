@@ -1,12 +1,5 @@
 const app = require('electron').app
-
-var t = titlebar();
-t.appendTo(document.body);
-t.on('close', function(e) {
-	console.log('close');
-});
-t.element.appendChild(document.createElement('div'));
-t.destroy();
+require('titlebar')
 
 app.on('ready', () => {
     win = new electron.BrowserWindow({
