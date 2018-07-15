@@ -19,7 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "electron-compile": "^6.4.2",
+    "electron-debug": "^2.0.0",
     "electron-localshortcut": "^2.0.2",
+    "electron-reload": "^1.2.5",
     "electron-squirrel-startup": "^1.0.0",
     "electron-titlebar": "0.0.3"
   },

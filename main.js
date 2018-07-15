@@ -1,15 +1,18 @@
-const app = require('electron').app
-require('titlebar')
+const { app, BrowserWindow } = require('electron');
+require('electron-debug')()
+//TODO: remove in production
+require('electron-reload')(__dirname, {
+    electron: require(`${__dirname}/node_modules/electron`)
+});
 
 app.on('ready', () => {
-    win = new electron.BrowserWindow({
+    let win = new BrowserWindow({
         width: 300, height: 500, icon: __dirname + '/icon.ico',
         webPreferences: {
-            plugins: true,
-            nodeIntegration: false
+            plugins: true
         },
         frame: false
     })
     win.on('closed', () => { app.quit() })
-    win.loadFile('index.html')
+    win.loadFile('./index.html')
 })
